@@ -36,7 +36,10 @@ body {
     margin: auto;
 }
 
-a {text-decoration:none}
+a {
+	text-decoration:none;
+	color: #fff;
+}
 
 .image-caption {
 	margin-top: 30px;
@@ -55,10 +58,10 @@ a {text-decoration:none}
 }
 .content {
 	background-color: rgba(26,23,67,0.85);
-	width: 700px;
+	width: 760px;
 	float: right;
-	padding:30px;
 	margin-top: 50px;
+	padding-bottom: 30px;
 }
 
 .register-form{
@@ -131,7 +134,8 @@ h1{
 	font-size: 1.2em;
 	text-transform: uppercase;
     font-weight:normal;
-    color:#BDE7F9;
+    text-align: center;
+    padding: 20px;
 }
 .page-title.location-title{
 	margin-bottom: 20px;
@@ -153,33 +157,18 @@ h2 {
 div.content > p {
     font-size:0.9em;
     line-height:1.2em;
+    width: 80%;
+    margin: auto;
 }
 
 /* Footer */
+
 .footer{
-	width:100%;
-	margin: auto;
-	text-align: center;
-	display: table;
-	color:#000;
-	font-weight: bold;
-	text-transform: uppercase;
-}
-.footer-left{
-	display:table-cell;
-	width: 33%;
-}
-.footer-center{
-	display:table-cell;
-	width: 33%;
-	font-size: 0.8em;
-	position: relative;
-	bottom: 13px;
-}
-.footer-right{
-	display:table-cell;
-	margin-right: 0;
-	width: 33%;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	left: 0;
+	background-color: rgba(26,23,67,0.85);
 }
 
 /* Menu */
@@ -228,12 +217,6 @@ div.content > p {
 .menu3 .menu .menu3 a,
 .menu4 .menu .menu4 a,
 .menu5 .menu .menu5 a,
-.menu a:hover {background-color: transparent; font-weight: bold !important;}
-
-.menu2 .menu .menu2 a,
-.menu3 .menu .menu3 a,
-.menu4 .menu .menu4 a,
-.menu5 .menu .menu5 a,
 .menu a:active {color: #28245F !important; border: none;}
 
 .menu li {
@@ -253,134 +236,173 @@ div.content > p {
 }
 
 /* Form */
-.field_placeholder{
-	position: absolute;
-	margin:5px 0 0 9px;
+
+.phpfmg_form {
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+	min-width: 1280px;
+	border-top: 1px solid #fff;
 }
 
-.field_block.form_error_highlight {
-  color: #FF0000;
+.field_block {
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	border-left: 1px solid #fff;
+	margin-bottom: -3px;
+	margin-left: -3px;
 }
 
-#field_5_div{margin-bottom: 15px;
-}
-.col_field label{
-	vertical-align: middle;
-    font-size: 0.9em;
-	}
-
-.col_field input{
-	vertical-align: middle;
-	}
-
-.col_label{
-	padding: 5px;
-	}
-ol.phpfmg_form{
-    list-style-type:none;
-    padding:0px;
-    margin:0px;
+#register-title{
+	padding: 17px 0;
+	text-transform: uppercase;
+	background-color: #262262;
+	border:none;
+	text-align: right;
 }
 
-ol.phpfmg_form input, ol.phpfmg_form textarea, ol.phpfmg_form select{
-    border: 1px solid #BDE7F9;
-    padding: 7px;
-    background-color:transparent;
-    color: #fff;
+#register-title div {
+	padding-right: 20%;
 }
 
-ol.phpfmg_form li{
-    margin-bottom:5px;
-    clear:both;
-    display:block;
-    overflow:hidden;
-	width: 100%
-}
-     /* Webkit */
-input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color: #5A5A5A;}
-input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color: #c4c7c8;}
-    /* Firefox < 19 */
-input:-moz-placeholder,textarea:-moz-placeholder{color: #5A5A5A;opacity:1;}
-input:focus:-moz-placeholder,textarea:focus:-moz-placeholder{color: #c4c7c8;}
-    /* Firefox > 19 */
-input::-moz-placeholder,textarea::-moz-placeholder{color: #5A5A5A;opacity:1;}
-input:focus::-moz-placeholder,textarea:focus::-moz-placeholder{color: #c4c7c8;}
-    /* Internet Explorer 10 */
-input:-ms-input-placeholder,textarea:-ms-input-placeholder{color: #5A5A5A;}
-input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder{color: #c4c7c8;}
-
-.form_required{
-    color:red;
-    margin-right: 1px;
-    opacity:0.7;
+#field_2_div {
+	width: 10%;
 }
 
-#field_6{
+#frmFormMail{
+	margin: 0;
+	padding: 0;
+}
+
+#send-li{
+	width: 9%;
+	background-color: #262262;
+}
+
+.text_box {
+	background-color: transparent;
+	padding: 17px 0;
 	color: #fff;
-	}
-
-.field_block_over{
+	width: 100%;
+	border: none;
 }
 
-.form_submit_block{
-    text-align: right;
-    margin-top: -15px;
+.form_button {
+	margin-bottom: 0;
+	background-color: #262262;
+	padding: 17px 0;
+	border: none;
+	border-right:none;
+	color: #fff;
+	text-transform: uppercase;
+	width: 110%;
 }
 
-.text_box, .text_area, .text_select {
-    width:100%;
-}
-
-.text_area{
-    height:80px;
-}
-
-.form_error_title{
-    font-weight: bold;
-    color: red;
-}
-
-.form_error{
-    background-color: #F4F6E5;
-    border: 1px dashed #ff0000;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.form_error_highlight{
-    border-bottom: 1px dashed #ff0000;
-}
-
-div.instruction_error{
-    color: red;
-    font-weight:bold;
-}
-
-hr.sectionbreak{
-    height:1px;
-    color: #ccc;
-}
-
-#one_entry_msg{
-    background-color: #F4F6E5;
-    border: 1px dashed #ff0000;
-    padding: 10px;
-    margin-bottom: 10px;
-}
+     /* Webkit */
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color: #CBC4C4;font-size:10px;}
+input:focus::-webkit-input-placeholder,textarea:focus::-webkit-input-placeholder{color: #464646;}
+    /* Firefox < 19 */
+input:-moz-placeholder,textarea:-moz-placeholder{color: #CBC4C4;font-size:10px;opacity:1;}
+input:focus:-moz-placeholder,textarea:focus:-moz-placeholder{color: #464646;}
+    /* Firefox > 19 */
+input::-moz-placeholder,textarea::-moz-placeholder{color: #CBC4C4;font-size:10px;opacity:1;}
+input:focus::-moz-placeholder,textarea:focus::-moz-placeholder{color: #464646;}
+    /* Internet Explorer 10 */
+input:-ms-input-placeholder,textarea:-ms-input-placeholder{color: #CBC4C4;font-size:10px;}
+input:focus:-ms-input-placeholder,textarea:focus:-ms-input-placeholder{color: #464646;}
 
 
-#frmFormMailContainer input[type="submit"]{
-    padding: 4px 23px;
-    margin-bottom: 10px;
-    color: #fff;
-    text-transform: uppercase;
-}
-
-#frmFormMailContainer input[type="submit"]:hover{
-    background-color:  #A99049;
-}
 #phpfmg_processing_gif{width: 20px}
 
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
-#cboxOverlay{position:fixed; width:100%; height:100%;background:#000;opacity: 0.8 !important;}
-#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+/* SLIDESHOW */
+.cycle-slideshow, .cycle-slideshow * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+.cycle-slideshow { 
+	position: relative;background: url(http://malsup.github.com/images/spinner.gif) 50% 50% no-repeat;
+ }
+
+.cycle-slideshow img { 
+    /* 
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+    position: static; z-index: 100;
+}
+
+/* pager */
+.cycle-pager { 
+    text-align: center; width: 100%; z-index: 500; position: absolute; top: 10px; overflow: hidden;
+}
+.cycle-pager span { 
+    font-family: arial; font-size: 50px; width: 16px; height: 16px; 
+    display: inline-block; color: #ddd; cursor: pointer; 
+}
+.cycle-pager span.cycle-pager-active { color: #D69746;}
+.cycle-pager > * { cursor: pointer;}
+
+
+/* caption */
+.cycle-caption { position: absolute; color: white; bottom: 15px; right: 15px; z-index: 700; }
+
+
+/* overlay */
+.cycle-overlay { 
+    font-family: tahoma, arial;
+    position: absolute; bottom: 0; width: 100%; z-index: 600;
+    background: black; color: white; padding: 15px; opacity: .5;
+}
+
+
+/* prev / next links */
+.cycle-prev, .cycle-next { position: absolute; top: 0; width: 30%; opacity: 0; filter: alpha(opacity=0); z-index: 800; height: 100%; cursor: pointer; }
+.cycle-prev { left: 0;  background: url(http://malsup.github.com/images/left.png) 50% 50% no-repeat;}
+.cycle-next { right: 0; background: url(http://malsup.github.com/images/right.png) 50% 50% no-repeat;}
+.cycle-prev:hover, .cycle-next:hover { opacity: .7; filter: alpha(opacity=70) }
+
+.disabled { opacity: .5; filter:alpha(opacity=50); }
+
+
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+    content: 'Paused'; color: white; background: black; padding: 10px;
+    z-index: 500; position: absolute; top: 10px; right: 10px;
+    border-radius: 10px;
+    opacity: .5; filter: alpha(opacity=50);
+}
+
+/* 
+    media queries 
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    .cycle-slideshow { width: 200px;}
+    .cycle-overlay { padding: 4px }
+    .cycle-caption { bottom: 4px; right: 4px }
+}
+
+.cycle-pager-active{
+    color: #965E49;
+}
+
+.center {
+	text-align: center;
+}
+
+.image-titles {
+	text-transform: uppercase;
+	padding: 20px 0;
+}
+
+.title-divider{
+	color: #fff;
+	padding: 10px;
+	font-size: 15px;
+}

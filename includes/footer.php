@@ -1,7 +1,4 @@
-	<div class="footer-left">
-	</div>
-	<div class="footer-center">14-18 Gilbert Road, Preston</div>
-	<div class="footer-right"></div>
+<?php require($DOCUMENT_ROOT . "includes/pages/form/form.php"); ?>
 </div>
 </body>
 </html>
