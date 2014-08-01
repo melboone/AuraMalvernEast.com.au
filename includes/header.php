@@ -6,5 +6,14 @@
     <link href="css/style.css" rel="stylesheet" type="text/css" media="screen">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script type="text/javascript" src="js/ciclye.js"></script>
+    <script type="text/javascript">
+$("nav li").click(function ( e ) {
+    e.preventDefault();
+    $("nav li a.active").removeClass("active"); //Remove any "active" class  
+    $("a", this).addClass("active"); //Add "active" class to selected tab  
+
+    // $(activeTab).show(); //Fade in the active content  
+});
+    </script>
 </head>
 <body>

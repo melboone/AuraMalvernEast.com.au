@@ -242,7 +242,7 @@ div.content > p {
 	margin: 0;
 	display: inline-block;
 	width: 100%;
-	min-width: 1280px;
+	min-width: 696px;
 	border-top: 1px solid #fff;
 }
 
@@ -283,7 +283,7 @@ div.content > p {
 
 .text_box {
 	background-color: transparent;
-	padding: 17px 0;
+	padding: 17px 0 17px 20px;
 	color: #fff;
 	width: 100%;
 	border: none;
@@ -298,6 +298,7 @@ div.content > p {
 	color: #fff;
 	text-transform: uppercase;
 	width: 110%;
+	cursor:pointer;
 }
 
      /* Webkit */
